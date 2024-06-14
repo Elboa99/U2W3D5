@@ -14,8 +14,30 @@
   </head>
   <body>
     <main>
-      <h1 class="text-center text-warning mb-4">Bath Items</h1>
-      <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bathub</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="./backoffice.html">Modify</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container mt-5">
         <div id="cardsContainer" class="row row-cols-3 row-cols-md-4 gx-4 gy-4"></div>
       </div>
     </main>
