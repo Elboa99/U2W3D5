@@ -36,12 +36,13 @@ fetch("https://striveschool-api.herokuapp.com/api/product/", {
       cardPrice.classList.add("card-text");
       cardPrice.textContent = "prezzo: " + element.price + "€";
 
+      const cardDescpription = document.createElement("p");
+      cardDescpription.classList.add("cerd-descrpition");
+      cardDescpription.textContent = "description:" + " " + element.description;
+
       const button = document.createElement("button");
       button.classList.add("btn", "btn-outline-danger");
-      button.innerText = "delete";
-      button.addEventListener("click", (event) => {
-        event.target.closest(".col").remove();
-      });
+      button.innerText = "modifica";
 
       const priceAndButtonContainer = document.createElement("div");
       priceAndButtonContainer.classList.add(
@@ -52,6 +53,7 @@ fetch("https://striveschool-api.herokuapp.com/api/product/", {
 
       cardBody.appendChild(cardTitle);
       cardBody.appendChild(cardPrice);
+      cardBody.appendChild(cardDescpription);
       priceAndButtonContainer.appendChild(button);
       cardBody.appendChild(priceAndButtonContainer);
       card.appendChild(img);
