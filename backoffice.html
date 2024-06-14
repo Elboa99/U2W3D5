@@ -56,28 +56,33 @@
       <div class="container mt-5">
         <form id="form">
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Name</label>
+            <label for="name" class="form-label">Insert Id</label>
             <input type="text" class="form-control" id="name" required />
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Description</label>
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="Description" class="form-label">Description</label>
             <input type="text" class="form-control" id="Description" required />
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Brand</label>
+            <label for="Brand" class="form-label">Brand</label>
             <input type="text" class="form-control" id="Brand" required />
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">imageUrl</label>
+            <label for="imageUrl" class="form-label">imageUrl</label>
             <input type="url" class="form-control" id="imageUrl" required />
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Price</label>
+            <label for="Price" class="form-label">Price</label>
             <input type="number" class="form-control" id="Price" required />
           </div>
 
-          <button type="submit" class="btn btn-danger">Submit</button>
-          <button type="submit" class="btn btn-secondary">modifica</button>
+          <button type="submit" class="btn btn-success" id="submitBtn">Submit</button>
+          <button type="button" class="btn btn-secondary" id="modify">Modifica</button>
+          <button type="button" class="btn btn-danger" id="delete">Delete</button>
         </form>
       </div>
     </main>
